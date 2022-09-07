@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang=zh-CN>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="米粒壳的博客">
+    <meta property="og:type" content="website">
+    <meta name="description" content="米粒壳的博客">
+    <meta name="keyword"  content="hexo,Aircloud">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        软件工程大纲 - Mriracle 日常/笔记
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i> make lemon into lemonade </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar ">
+            <img src="/img/avatar.png" />
+        </div>
+        <div class="name">
+            <i>MY Li</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>收藏</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6%E6%A6%82%E8%BF%B0"><span class="toc-text">第一章 软件工程学概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%8D%B1%E6%9C%BA"><span class="toc-text">软件危机</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B"><span class="toc-text">软件工程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-text">定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E8%B4%A8%E7%89%B9%E5%BE%81"><span class="toc-text">本质特征</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="toc-text">基本原理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%AD%A6"><span class="toc-text">软件工程学</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-1"><span class="toc-text">定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="toc-text">三要素</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text">软件生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89%E6%97%B6%E6%9C%9F"><span class="toc-text">定义时期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%97%B6%E6%9C%9F"><span class="toc-text">开发时期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%B4%E6%8A%A4%E6%97%B6%E6%9C%9F"><span class="toc-text">维护时期</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E8%BF%87%E7%A8%8B"><span class="toc-text">软件过程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%A8%A1%E5%9E%8B%EF%BC%88%E8%BF%87%E7%A8%8B%E6%A8%A1%E5%9E%8B%EF%BC%89"><span class="toc-text">生命周期模型（过程模型）</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E5%8F%AF%E8%A1%8C%E6%80%A7%E7%A0%94%E7%A9%B6"><span class="toc-text">第二章 可行性研究</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89-2"><span class="toc-text">定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E7%A7%8D%E5%8F%AF%E8%A1%8C%E6%80%A7"><span class="toc-text">四种可行性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-text">系统流程图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9B%BE"><span class="toc-text">数据流图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%AD%97%E5%85%B8"><span class="toc-text">数据字典</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90"><span class="toc-text">第三章 需求分析</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%9A%84%E4%BB%BB%E5%8A%A1"><span class="toc-text">需求分析的任务</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%AE%E5%AE%9A%E5%AF%B9%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%BB%BC%E5%90%88%E8%A6%81%E6%B1%82"><span class="toc-text">确定对系统的综合要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%9E%90%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E6%8D%AE%E8%A6%81%E6%B1%82"><span class="toc-text">分析系统的数据要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BC%E5%87%BA%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%80%BB%E8%BE%91%E6%A8%A1%E5%9E%8B"><span class="toc-text">导出系统的逻辑模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%AD%A3%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E8%AE%A1%E5%88%92"><span class="toc-text">修正系统开发计划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8E%E7%94%A8%E6%88%B7%E6%B2%9F%E9%80%9A%E8%8E%B7%E5%8F%96%E9%9C%80%E6%B1%82%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-text">与用户沟通获取需求的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E9%AA%8C%E8%AF%81%E7%9A%84%E5%9B%9B%E4%B8%AA%E6%96%B9%E9%9D%A2"><span class="toc-text">需求验证的四个方面</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E6%80%BB%E4%BD%93%E8%AE%BE%E8%AE%A1"><span class="toc-text">第五章 总体设计</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E5%8E%9F%E7%90%86"><span class="toc-text">设计原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8F%91%E8%A7%84%E5%88%99"><span class="toc-text">启发规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%8F%E7%BB%98%E8%BD%AF%E4%BB%B6%E7%BB%93%E6%9E%84%E7%9A%84%E5%9B%BE%E5%BD%A2%E5%B7%A5%E5%85%B7"><span class="toc-text">描绘软件结构的图形工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%B3%95"><span class="toc-text">面向数据流的设计方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E7%AB%A0-%E8%AF%A6%E7%BB%86%E8%AE%BE%E8%AE%A1"><span class="toc-text">第六章 详细设计</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="toc-text">结构程序设计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BA%8F"><span class="toc-text">结构化程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B6%88%E9%99%A4goto%E8%AF%AD%E5%8F%A5"><span class="toc-text">消除goto语句</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E5%B7%A5%E5%85%B7"><span class="toc-text">设计工具</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E7%AB%A0-%E5%AE%9E%E7%8E%B0"><span class="toc-text">第七章 实现</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95"><span class="toc-text">软件测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87"><span class="toc-text">目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-text">方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E6%AD%A5%E9%AA%A4"><span class="toc-text">测试步骤</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E7%AB%A0-%E7%BB%B4%E6%8A%A4"><span class="toc-text">第八章 维护</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E7%BB%B4%E6%8A%A4%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-text">软件维护的特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%B3%E5%AE%9A%E8%BD%AF%E4%BB%B6%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7%E7%9A%84%E5%9B%A0%E7%B4%A0"><span class="toc-text">决定软件可维护性的因素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E6%A1%A3"><span class="toc-text">文档</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E9%83%A8%E5%88%86"><span class="toc-text">面向对象部分</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E6%96%B9%E6%B3%95%E5%AD%A6%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-text">面向对象方法学的优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%87%86%E5%88%99"><span class="toc-text">面向对象设计的准则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8F%91%E8%A7%84%E5%88%99-1"><span class="toc-text">启发规则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%87%8D%E7%94%A8"><span class="toc-text">重用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E6%88%90%E5%88%86%E9%87%8D%E7%94%A8%E7%BA%A7%E5%88%AB"><span class="toc-text">软件成分重用级别</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%AF%E9%87%8D%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%88%90%E5%88%86"><span class="toc-text">可重用软件成分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%B1%BB%E6%9E%84%E4%BB%B6"><span class="toc-text">类构件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E7%94%A8%E6%96%B9%E5%BC%8F"><span class="toc-text">重用方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%88%86%E8%A7%A3"><span class="toc-text">系统分解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E5%85%B3%E8%81%94"><span class="toc-text">设计关联</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E4%BC%98%E5%8C%96"><span class="toc-text">设计优化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8A%BD%E8%B1%A1%E4%B8%8E%E5%85%B7%E4%BD%93"><span class="toc-text">抽象与具体</span></a></li></ol></li></ol></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i> make lemon into lemonade </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        软件工程大纲
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">发布于：<span>2022-09-07 15:02:02</span></span>
+        
+        <span class="attr">标签：/
+        
+        <a class="tag" href="/tags/#笔记" title="笔记">笔记</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#软件工程" title="软件工程">软件工程</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="第一章-软件工程学概述"><a href="#第一章-软件工程学概述" class="headerlink" title="第一章 软件工程学概述"></a>第一章 软件工程学概述</h1><h1 id="软件危机"><a href="#软件危机" class="headerlink" title="软件危机"></a>软件危机</h1><ul>
+<li>定义</li>
+<li>典型表现</li>
+<li>产生原因</li>
+<li>消除途径</li>
+</ul>
+<h1 id="软件工程"><a href="#软件工程" class="headerlink" title="软件工程"></a>软件工程</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><ul>
+<li>略</li>
+</ul>
+<h2 id="本质特征"><a href="#本质特征" class="headerlink" title="本质特征"></a>本质特征</h2><p>（1）软件工程关注大型程序的构造。</p>
+<p>（2）软件工程的<strong>中心课题是控制复杂性。</strong></p>
+<p>（3）软件经常变化。</p>
+<p>（4）开发软件的效率非常重要。</p>
+<p>（5）和谐的合作是开发软件的关键。</p>
+<p>（6）软件必须有效的支持它的用户。</p>
+<p>（7）软件工程领域中是由一种<strong>文化背景的人</strong>替具有另一种文化背景的人创造产品。</p>
+<h2 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h2><p>（1）用<strong>分阶段</strong>的生命周期计划严格管理。</p>
+<p>（2）坚持进行阶段评审。</p>
+<p>（3）实行严格的产品控制。</p>
+<p>（4）采用现代程序设计技术。</p>
+<p>（5）结果应能清楚地审查。</p>
+<p>（6）开发小组人员应该<strong>少而精</strong>。</p>
+<p>（7）承认<strong>不断改进</strong>软件工程实践的必要性</p>
+<h1 id="软件工程学"><a href="#软件工程学" class="headerlink" title="软件工程学"></a>软件工程学</h1><h2 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h2><h2 id="三要素"><a href="#三要素" class="headerlink" title="三要素"></a>三要素</h2><p>方法、工具、过程</p>
+<p>传统方法、面向对象方法</p>
+<h1 id="软件生命周期"><a href="#软件生命周期" class="headerlink" title="软件生命周期"></a>软件生命周期</h1><h2 id="定义时期"><a href="#定义时期" class="headerlink" title="定义时期"></a>定义时期</h2><ul>
+<li><strong>问题定义</strong> “要解决的问题是什么”</li>
+<li><strong>可行性研究</strong> “对于上一个阶段所确定的问题有行得通的解决方法吗？”</li>
+<li><strong>需求分析</strong> “为了解决这个问题，目标系统必须做什么”</li>
+</ul>
+<h2 id="开发时期"><a href="#开发时期" class="headerlink" title="开发时期"></a>开发时期</h2><ul>
+<li><strong>总体设计</strong> “概括的说，应该怎样实现目标系统”</li>
+<li><strong>详细设计</strong> “应该怎样具体地实现这个系统呢？”</li>
+<li><strong>编码和单元测试</strong> 写出正确的容易理解、容易维护的程序模块</li>
+<li><strong>综合测试</strong> 通过各种类型的测试使软件达到预定的要求</li>
+</ul>
+<h2 id="维护时期"><a href="#维护时期" class="headerlink" title="维护时期"></a>维护时期</h2><ul>
+<li><strong>软件维护</strong> 使系统持久地满足用户的需要<ul>
+<li>改正性维护</li>
+<li>适应性维护</li>
+<li>完善性维护</li>
+<li>预防性维护</li>
+</ul>
+</li>
+</ul>
+<h1 id="软件过程"><a href="#软件过程" class="headerlink" title="软件过程"></a>软件过程</h1><p>描述软件过程——</p>
+<h2 id="生命周期模型（过程模型）"><a href="#生命周期模型（过程模型）" class="headerlink" title="生命周期模型（过程模型）"></a>生命周期模型（过程模型）</h2><p>瀑布模型</p>
+<p>快速原型模型</p>
+<p>增量模型</p>
+<p>螺旋模型</p>
+<p>喷泉模型</p>
+<p>【腾讯文档】模型对比表</p>
+<p><a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DT2FVU3Ntdkt4Z3Rw">https://docs.qq.com/sheet/DT2FVU3Ntdkt4Z3Rw</a></p>
+<h1 id="第二章-可行性研究"><a href="#第二章-可行性研究" class="headerlink" title="第二章 可行性研究"></a>第二章 可行性研究</h1><h2 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h2><p>目的不是要解决问题，而是<strong>确定问题是否值得去解决</strong></p>
+<p>用最小的代价在尽可能短的时间内确定问题是否能够解决</p>
+<h2 id="四种可行性"><a href="#四种可行性" class="headerlink" title="四种可行性"></a>四种可行性</h2><h2 id="系统流程图"><a href="#系统流程图" class="headerlink" title="系统流程图"></a>系统流程图</h2><p>新系统的逻辑模型变成<strong>物理</strong>模型</p>
+<p>概括地描绘<strong>物理系统</strong>的传统工具</p>
+<h2 id="数据流图"><a href="#数据流图" class="headerlink" title="数据流图"></a>数据流图</h2><p>没有物理元素</p>
+<p>描绘<strong>信息流和数据</strong>从输入移动到输出过程中所经受的变换</p>
+<p><img src="/../resources/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/image1-14.png" alt="image1"></p>
+<h2 id="数据字典"><a href="#数据字典" class="headerlink" title="数据字典"></a>数据字典</h2><p>对数据流图中包含的所有元素的定义的集合</p>
+<ul>
+<li>顺序 +</li>
+<li>选择 [|]</li>
+<li>重复 {}</li>
+<li>可选()</li>
+</ul>
+<h1 id="第三章-需求分析"><a href="#第三章-需求分析" class="headerlink" title="第三章 需求分析"></a>第三章 需求分析</h1><p>提出<strong>完整、准确、清晰和具体</strong>的要求</p>
+<h1 id="需求分析的任务"><a href="#需求分析的任务" class="headerlink" title="需求分析的任务"></a>需求分析的任务</h1><h2 id="确定对系统的综合要求"><a href="#确定对系统的综合要求" class="headerlink" title="确定对系统的综合要求"></a>确定对系统的综合要求</h2><p>功能需求</p>
+<p>性能需求</p>
+<p>可靠性和可用性需求</p>
+<p>出错处理需求</p>
+<p>接口需求</p>
+<p>约束</p>
+<p>逆向需求</p>
+<p>将来可能提出的要求</p>
+<h2 id="分析系统的数据要求"><a href="#分析系统的数据要求" class="headerlink" title="分析系统的数据要求"></a>分析系统的数据要求</h2><h2 id="导出系统的逻辑模型"><a href="#导出系统的逻辑模型" class="headerlink" title="导出系统的逻辑模型"></a>导出系统的逻辑模型</h2><p>实体——联系图（ER图）</p>
+<p>状态转换图</p>
+<p>其他：层次方框图、Warnier图</p>
+<h2 id="修正系统开发计划"><a href="#修正系统开发计划" class="headerlink" title="修正系统开发计划"></a>修正系统开发计划</h2><h2 id="与用户沟通获取需求的方法"><a href="#与用户沟通获取需求的方法" class="headerlink" title="与用户沟通获取需求的方法"></a>与用户沟通获取需求的方法</h2><h2 id="需求验证的四个方面"><a href="#需求验证的四个方面" class="headerlink" title="需求验证的四个方面"></a>需求验证的四个方面</h2><ul>
+<li>一致性：需求不互相矛盾</li>
+<li>完整性：包括用户需要的每一个功能或性能</li>
+<li>现实性：现有技术可以实现</li>
+<li>有效性：需求是正确的，确实能解决用户面对的问题</li>
+</ul>
+<h1 id="第五章-总体设计"><a href="#第五章-总体设计" class="headerlink" title="第五章 总体设计"></a>第五章 总体设计</h1><h2 id="设计原理"><a href="#设计原理" class="headerlink" title="设计原理"></a>设计原理</h2><ul>
+<li>模块化<ul>
+<li>由边界元素限定的相邻程序元素</li>
+</ul>
+</li>
+<li>抽象</li>
+<li>逐步求精</li>
+<li>信息隐藏和局部化</li>
+<li>模块独立<ul>
+<li>高内聚、低耦合</li>
+</ul>
+</li>
+</ul>
+<h2 id="启发规则"><a href="#启发规则" class="headerlink" title="启发规则"></a>启发规则</h2><p>改进软件结构提高模块独立性</p>
+<p>模块<strong>规模</strong>应该<strong>适中</strong></p>
+<p>深度、宽度、删除和扇入都应适当</p>
+<p>模块的<strong>作用域应在控制域之内</strong></p>
+<p>力争降低模块接口的复杂程度</p>
+<p>设计<strong>单入口单出口</strong>的模块</p>
+<p>模块功能应该可以预测</p>
+<h2 id="描绘软件结构的图形工具"><a href="#描绘软件结构的图形工具" class="headerlink" title="描绘软件结构的图形工具"></a>描绘软件结构的图形工具</h2><p>层次图、HIPO图、结构图</p>
+<h2 id="面向数据流的设计方法"><a href="#面向数据流的设计方法" class="headerlink" title="面向数据流的设计方法"></a>面向数据流的设计方法</h2><p>事物流</p>
+<p>变换流</p>
+<h1 id="第六章-详细设计"><a href="#第六章-详细设计" class="headerlink" title="第六章 详细设计"></a>第六章 详细设计</h1><h2 id="结构程序设计"><a href="#结构程序设计" class="headerlink" title="结构程序设计"></a>结构程序设计</h2><h2 id="结构化程序"><a href="#结构化程序" class="headerlink" title="结构化程序"></a>结构化程序</h2><p><strong>顺序、分支</strong>和<strong>循环</strong>三种基本控制结构和程序块</p>
+<p><strong>“一个入口和一个出口</strong>”的原则</p>
+<h2 id="消除goto语句"><a href="#消除goto语句" class="headerlink" title="消除goto语句"></a>消除goto语句</h2><p>增加辅助变量</p>
+<p>改变程序执行顺序</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="设计工具"><a href="#设计工具" class="headerlink" title="设计工具"></a>设计工具</h2><ul>
+<li><p>程序流程图</p>
+</li>
+<li><p>盒图</p>
+</li>
+<li><p>PAD图</p>
+</li>
+<li><p>判定表、判定树</p>
+</li>
+</ul>
+<h1 id="第七章-实现"><a href="#第七章-实现" class="headerlink" title="第七章 实现"></a>第七章 实现</h1><h2 id="软件测试"><a href="#软件测试" class="headerlink" title="软件测试"></a>软件测试</h2><p>通过执行程序，并从多种角度观测程序执行时的行为，从而发现程序中的错误。</p>
+<h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p>通过有限个测试用例，尽可能多地发现程序中的错误。</p>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><p>白盒测试</p>
+<p>黑盒测试</p>
+<h2 id="测试步骤"><a href="#测试步骤" class="headerlink" title="测试步骤"></a>测试步骤</h2><ul>
+<li><p>单元测试</p>
+</li>
+<li><p>集成测试</p>
+<ul>
+<li>驱动程序<ul>
+<li>模拟被测模块的调用程序（<strong>父模块</strong>）</li>
+</ul>
+</li>
+<li>存根程序<ul>
+<li>模拟被测模块的<strong>子模块</strong></li>
+</ul>
+</li>
+<li>集成方法<ul>
+<li>非渐增式</li>
+<li>渐增式<ul>
+<li>自顶向下</li>
+<li>自底向上</li>
+<li>三明治式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>验收测试</p>
+</li>
+</ul>
+<h1 id="第八章-维护"><a href="#第八章-维护" class="headerlink" title="第八章 维护"></a>第八章 维护</h1><h2 id="软件维护的特点"><a href="#软件维护的特点" class="headerlink" title="软件维护的特点"></a>软件维护的特点</h2><p>结构化和非结构化维护差别巨大</p>
+<h2 id="决定软件可维护性的因素"><a href="#决定软件可维护性的因素" class="headerlink" title="决定软件可维护性的因素"></a>决定软件可维护性的因素</h2><ol>
+<li>可理解性</li>
+<li>可测试性</li>
+<li>可修改性</li>
+<li>可移植性</li>
+<li>可重用性</li>
+</ol>
+<h2 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h2><p>文档是影响软件可维护性的决定因素。</p>
+<p>所以文档比程序代码更重要</p>
+<ul>
+<li><p>用户文档</p>
+</li>
+<li><p>系统文档</p>
+</li>
+</ul>
+<h1 id="面向对象部分"><a href="#面向对象部分" class="headerlink" title="面向对象部分"></a>面向对象部分</h1><p><strong>面向对象&#x3D;类+对象+继承+通信</strong></p>
+<ul>
+<li>功能模型：用例图</li>
+<li>对象模型：类图（类与类之间的静态关系）</li>
+<li>动态模型：顺序图、状态图</li>
+</ul>
+<h2 id="面向对象方法学的优点"><a href="#面向对象方法学的优点" class="headerlink" title="面向对象方法学的优点"></a>面向对象方法学的优点</h2><ul>
+<li><p>与人类习惯的思维方式一致</p>
+</li>
+<li><p>稳定性好</p>
+</li>
+<li><p>可重用性好</p>
+</li>
+<li><p>较易开发大型软件产品</p>
+</li>
+<li><p>可维护性好</p>
+</li>
+</ul>
+<h2 id="面向对象设计的准则"><a href="#面向对象设计的准则" class="headerlink" title="面向对象设计的准则"></a>面向对象设计的准则</h2><ul>
+<li><p>模块化</p>
+</li>
+<li><p>抽象</p>
+</li>
+<li><p>信息隐藏</p>
+</li>
+<li><p>弱耦合</p>
+</li>
+<li><p>强内聚</p>
+</li>
+<li><p>可重用</p>
+</li>
+</ul>
+<h2 id="启发规则-1"><a href="#启发规则-1" class="headerlink" title="启发规则"></a>启发规则</h2><ul>
+<li><p>设计结果应该清晰易懂</p>
+</li>
+<li><p>一般-特殊结构的深度应适当</p>
+</li>
+<li><p>设计简单的类</p>
+</li>
+<li><p>使用简单的协议</p>
+</li>
+<li><p>使用简单的服务</p>
+</li>
+<li><p>把设计变动减至最小</p>
+</li>
+</ul>
+<h2 id="重用"><a href="#重用" class="headerlink" title="重用"></a>重用</h2><p>仅关注软件成分重用</p>
+<h3 id="软件成分重用级别"><a href="#软件成分重用级别" class="headerlink" title="软件成分重用级别"></a>软件成分重用级别</h3><ul>
+<li><p>代码重用：源代码剪贴、源代码包含（ include ）、继承；</p>
+</li>
+<li><p>设计结果重用</p>
+</li>
+<li><p>分析结果重用</p>
+</li>
+</ul>
+<h4 id="可重用软件成分"><a href="#可重用软件成分" class="headerlink" title="可重用软件成分"></a>可重用软件成分</h4><p>项目计划、成本估计、体系结构、需求模型和规格说明、设计、 源代码、用户文档和技术文档、用户界面、数据、测试用例。</p>
+<h4 id="类构件"><a href="#类构件" class="headerlink" title="类构件"></a>类构件</h4><p>类是理想的可重用构件</p>
+<h3 id="重用方式"><a href="#重用方式" class="headerlink" title="重用方式"></a>重用方式</h3><ul>
+<li><p>实例重用</p>
+</li>
+<li><p>继承重用</p>
+</li>
+<li><p>多态重用</p>
+<ul>
+<li><p>转换接口：派生类重新定义父类中的服务。</p>
+</li>
+<li><p>扩充接口：如果派生类中没有给出扩充接口的新算法，则将继承父类中的算法</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="系统分解"><a href="#系统分解" class="headerlink" title="系统分解"></a>系统分解</h3><p>设计问题域子系统</p>
+<p>调整需求</p>
+<p>重用已有的类</p>
+<p>把问题域类组合在一起</p>
+<p>增添一般化类以建立协议</p>
+<p>调整继承层次</p>
+<h3 id="设计关联"><a href="#设计关联" class="headerlink" title="设计关联"></a>设计关联</h3><ul>
+<li><p>单向关联：指针</p>
+</li>
+<li><p>双向关联：</p>
+<p>  属性实现一个方向的关联</p>
+<p>  属性实现两个方向的关联</p>
+<p>  独立的关联对象实现双向关联</p>
+</li>
+</ul>
+<h3 id="设计优化"><a href="#设计优化" class="headerlink" title="设计优化"></a>设计优化</h3><p>提高效率的几项技术</p>
+<p>增加冗余关联以提高访问效率</p>
+<p>调整查询次序</p>
+<p>保留派生属性</p>
+<p>调整继承关系</p>
+<h4 id="抽象与具体"><a href="#抽象与具体" class="headerlink" title="抽象与具体"></a>抽象与具体</h4><p>为提高继承程度修改类定义</p>
+<p>利用委托实现行为共享</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+        <li>
+            <a target="_blank"  href="https://github.com/Miracle-0718">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+</html>
