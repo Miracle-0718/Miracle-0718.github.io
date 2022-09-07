@@ -51,7 +51,7 @@
 <div class="nav" id="nav">
     <div class="avatar-name">
         <div class="avatar radius">
-            <img src="/img/avatar.png" />
+            <img src="/img/avatar.jpg" />
         </div>
         <div class="name">
             <i>MY Li</i>
@@ -101,7 +101,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA"><span class="toc-text">hexo 个人博客搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B"><span class="toc-text">参考教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86"><span class="toc-text">报错处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-text">主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#aircloud"><span class="toc-text">aircloud</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OneNote%E8%BD%ACMarkdown"><span class="toc-text">OneNote转Markdown</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA"><span class="toc-text">hexo 个人博客搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B"><span class="toc-text">参考教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86"><span class="toc-text">报错处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98"><span class="toc-text">主题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#aircloud"><span class="toc-text">aircloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9"><span class="toc-text">主题修改</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E6%B8%90%E5%8F%98%E8%89%B2"><span class="toc-text">背景渐变色</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OneNote%E8%BD%ACMarkdown"><span class="toc-text">OneNote转Markdown</span></a></li></ol>
 </div>
     
 </div>
@@ -165,7 +165,13 @@
 </ul>
 </li>
 </ul>
-<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><h3 id="aircloud"><a href="#aircloud" class="headerlink" title="aircloud"></a><a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">aircloud</a></h3><h1 id="OneNote转Markdown"><a href="#OneNote转Markdown" class="headerlink" title="OneNote转Markdown"></a>OneNote转Markdown</h1><p><a target="_blank" rel="noopener" href="https://github.com/alxnbl/onenote-md-exporter">https://github.com/alxnbl/onenote-md-exporter</a></p>
+<h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><h3 id="aircloud"><a href="#aircloud" class="headerlink" title="aircloud"></a><a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">aircloud</a></h3><h3 id="主题修改"><a href="#主题修改" class="headerlink" title="主题修改"></a>主题修改</h3><h4 id="背景渐变色"><a href="#背景渐变色" class="headerlink" title="背景渐变色"></a>背景渐变色</h4><p>css样式设置参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/MoYu-zc/p/14397889.html">Hexo之更换背景及透明度</a></p>
+<p><strong>Blog\themes\hexo-theme-aircloud-master\source\css</strong> 里修改:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  margin-left: calc(100vw - 100%) !important;</span><br><span class="line">  -webkit-text-size-adjust: none;</span><br><span class="line">  //背景渐变</span><br><span class="line">  background: #C9D6FF;  </span><br><span class="line">  background: -webkit-linear-gradient(to left, #E2E2E2, #C9D6FF); </span><br><span class="line">  background: linear-gradient(to left, #E2E2E2, #C9D6FF);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.index-container .index-middle &#123;</span><br><span class="line">  max-width: 784px;</span><br><span class="line">  flex: 1;</span><br><span class="line">  margin-top: 50px; //设置上外间距</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="OneNote转Markdown"><a href="#OneNote转Markdown" class="headerlink" title="OneNote转Markdown"></a>OneNote转Markdown</h1><p><a target="_blank" rel="noopener" href="https://github.com/alxnbl/onenote-md-exporter">https://github.com/alxnbl/onenote-md-exporter</a></p>
 
         
         <br />
