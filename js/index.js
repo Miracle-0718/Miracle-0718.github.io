@@ -375,3 +375,15 @@ if(donateButton) {
     donateImg.src = donateImg.dataset.src
 }
 
+// code copy button
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            oldonload();
+            func();
+        }
+    }
+}
