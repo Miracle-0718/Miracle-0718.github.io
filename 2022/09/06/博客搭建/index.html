@@ -104,7 +104,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA"><span class="toc-text">hexo 个人博客搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B"><span class="toc-text">参考教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86"><span class="toc-text">报错处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE"><span class="toc-text">主题设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#aircloud"><span class="toc-text">aircloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9"><span class="toc-text">主题修改</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E6%B8%90%E5%8F%98%E8%89%B2"><span class="toc-text">背景渐变色</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E6%A0%8F%E4%BF%AE%E6%94%B9"><span class="toc-text">左侧导航栏修改</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%A4%8D%E5%88%B6%E6%A0%87%E7%AD%BE"><span class="toc-text">代码复制标签</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OneNote%E8%BD%ACMarkdown"><span class="toc-text">OneNote转Markdown</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA"><span class="toc-text">hexo 个人博客搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B"><span class="toc-text">参考教程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%A5%E9%94%99%E5%A4%84%E7%90%86"><span class="toc-text">报错处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE"><span class="toc-text">主题设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#aircloud"><span class="toc-text">aircloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9"><span class="toc-text">主题修改</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OneNote%E8%BD%ACMarkdown"><span class="toc-text">OneNote转Markdown</span></a></li></ol>
 </div>
     
 </div>
@@ -170,18 +170,30 @@
 </li>
 </ul>
 <h2 id="主题设置"><a href="#主题设置" class="headerlink" title="主题设置"></a>主题设置</h2><h3 id="aircloud"><a href="#aircloud" class="headerlink" title="aircloud"></a><a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">aircloud</a></h3><p>看了很多主题都觉得不是非常满意，使用比较多的主题(next&#x2F;pure),源码可能比较复杂，所以从当前主题开始修改</p>
-<h3 id="主题修改"><a href="#主题修改" class="headerlink" title="主题修改"></a>主题修改</h3><h4 id="背景渐变色"><a href="#背景渐变色" class="headerlink" title="背景渐变色"></a>背景渐变色</h4><p>css样式设置参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/MoYu-zc/p/14397889.html">Hexo之更换背景及透明度</a></p>
-<p>修改样式文件：<strong>hexo-theme-aircloud-master\source\css</strong> </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line">  margin-left: calc(100vw - 100%) !important;</span><br><span class="line">  -webkit-text-size-adjust: none;</span><br><span class="line">  //背景渐变 颜色可调</span><br><span class="line">  background: #C9D6FF;  </span><br><span class="line">  background: -webkit-linear-gradient(to left, #E2E2E2, #C9D6FF); </span><br><span class="line">  background: linear-gradient(to left, #E2E2E2, #C9D6FF);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="主题修改"><a href="#主题修改" class="headerlink" title="主题修改"></a>主题修改</h3><ul>
+<li><p>背景渐变色</p>
+<p>css样式设置参考 <a target="_blank" rel="noopener" href="https://www.cnblogs.com/MoYu-zc/p/14397889.html">Hexo之更换背景及透明度</a></p>
+<p>修改样式文件：<strong>hexo-theme-aircloud-master\source\css</strong></p>
+</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">margin-left</span>: <span class="built_in">calc</span>(<span class="number">100vw</span> - <span class="number">100%</span>) <span class="meta">!important</span>;</span><br><span class="line">  -webkit-text-size-adjust: none;</span><br><span class="line">  //背景渐变 颜色可调</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#C9D6FF</span>;  </span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">-webkit-linear-gradient</span>(to left, <span class="number">#E2E2E2</span>, <span class="number">#C9D6FF</span>); </span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to left, <span class="number">#E2E2E2</span>, <span class="number">#C9D6FF</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">.index-container .index-middle &#123;</span><br><span class="line">  max-width: 784px;</span><br><span class="line">  flex: 1;</span><br><span class="line">  margin-top: 50px; //设置上外间距</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.index-container</span> <span class="selector-class">.index-middle</span> &#123;</span><br><span class="line">  <span class="attribute">max-width</span>: <span class="number">784px</span>;</span><br><span class="line">  <span class="attribute">flex</span>: <span class="number">1</span>;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">50px</span>; //设置上外间距</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="左侧导航栏修改"><a href="#左侧导航栏修改" class="headerlink" title="左侧导航栏修改"></a>左侧导航栏修改</h4><p>修改字体，增加内容标签</p>
-<p>字体展示<a target="_blank" rel="noopener" href="https://www.zhangxinxu.com/study/201703/font-family-chinese-english.html">CSS font-family中文字体英文名称展示
-</a></p>
+<ul>
+<li><p>左侧导航栏修改</p>
+<p>修改字体，增加内容标签</p>
+<ul>
+<li>字体展示<a target="_blank" rel="noopener" href="https://www.zhangxinxu.com/study/201703/font-family-chinese-english.html">CSS font-family中文字体英文名称展示
+</a></li>
+</ul>
 <p>布局文件(<strong>\layout_partial\nav.ejs</strong>)新增description标签：</p>
 <p>同时airloud.css文件新增对应样式</p>
-<h4 id="代码复制标签"><a href="#代码复制标签" class="headerlink" title="代码复制标签"></a>代码复制标签</h4><h1 id="OneNote转Markdown"><a href="#OneNote转Markdown" class="headerlink" title="OneNote转Markdown"></a>OneNote转Markdown</h1><p><a target="_blank" rel="noopener" href="https://github.com/alxnbl/onenote-md-exporter">https://github.com/alxnbl/onenote-md-exporter</a></p>
+</li>
+<li><p>代码复制标签<br><a target="_blank" rel="noopener" href="https://wkzqn.github.io/2020/02/16/hexo+yilia%E5%AE%9E%E7%8E%B0%E4%BB%A3%E7%A0%81%E5%9D%97%E5%A4%8D%E8%AF%95%E5%8A%9F%E8%83%BD/">hexo+yilia实现代码块复制功能</a> 主题不一样，但可以照搬来用</p>
+</li>
+</ul>
+<h1 id="OneNote转Markdown"><a href="#OneNote转Markdown" class="headerlink" title="OneNote转Markdown"></a>OneNote转Markdown</h1><p><a target="_blank" rel="noopener" href="https://github.com/alxnbl/onenote-md-exporter">https://github.com/alxnbl/onenote-md-exporter</a></p>
 
         
         <br />
@@ -240,82 +252,11 @@
 
 
 
-
-    <style>
-        .copy-btn {
-            display: inline-block;
-            padding: 6px 12px;
-            font-size: 13px;
-            font-weight: 500;
-            font-family: 微软雅黑;
-            line-height: 20px;
-            color: #333;
-            white-space: nowrap;
-            vertical-align: middle;
-            cursor: pointer;
-            background-color: #eee;
-            background-image: linear-gradient(#fcfcfc, #eee);
-            border: 1px solid #d5d5d5;
-            border-radius: 3px;
-            user-select: none;
-            outline: 0;
-        }
-
-        .highlight-wrap .copy-btn {
-            transition: opacity .3s ease-in-out;
-            opacity: 0;
-            padding: 2px 6px;
-            position: absolute;
-            right: 4px;
-            top: 8px;
-            z-index: 2;
-        }
-
-        .highlight-wrap:hover .copy-btn,
-        .highlight-wrap .copy-btn:focus {
-            opacity: 1
-        }
-
-        .highlight-wrap {
-            position: relative;
-        }
-    </style>
-
-    <script>
-        addLoadEvent(()=>{
-            $('.highlight').each(function (i, e) {
-                var $wrap = $('<div>').addClass('highlight-wrap')
-                $(e).after($wrap)
-                $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
-                    var code = $(this).parent().find(".code")[0].innerText
-                    
-                    code += "\n/**\n* 代码仅供参考，使用代码请注明引用出处\n* MYli @ https://miracle-0718.github.io/\n*/"
-                    
-                    var ta = document.createElement('textarea')
-                    document.body.appendChild(ta)
-                    ta.style.position = 'absolute'
-                    ta.style.top = '0px'
-                    ta.style.left = '0px'
-                    ta.value = code
-                    ta.select()
-                    ta.focus()
-                    var result = document.execCommand('copy')
-                    document.body.removeChild(ta)
-                    
-                    if(result)$(this).text('复制成功')
-                    else $(this).text('复制失败')
-                    
-                    $(this).blur()
-                })).on('mouseleave', function (e) {
-                    var $b = $(this).find('.copy-btn')
-                    setTimeout(function () {
-                        $b.text('复制')
-                    }, 300)
-                }).append(e)
-            })
-        })
-    </script>
-
+<!-- 代码块复制功能 -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/clipboard.js"></script>  -->
+<script type="text/javascript" src="/js/clipboard_use.js"></script>
 </body>
 
 <script>
